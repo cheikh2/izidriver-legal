@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Politique de confidentialité de l'application IziDriver - Application chauffeur VTC">
+    <title>Politique de Confidentialité - IziDriver</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .toc {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        .toc h2 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 10px;
+        }
+
+        .toc a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 1.4em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            color: #555;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .highlight-box strong {
+            color: #856404;
+        }
+
+        .info-box {
+            background: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .info-box strong {
+            color: #0c5460;
+        }
+
+        .success-box {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .success-box strong {
+            color: #155724;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #e83e8c;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #667eea;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .back-to-top:hover {
+            background: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 20px 15px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+
+        .section {
+            scroll-margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 Politique de Confidentialité</h1>
+            <p><strong>IziDriver</strong> - Application Chauffeur VTC</p>
+            <p style="font-size: 0.95em; margin-top: 10px;">Dernière mise à jour : Mai 2026</p>
+        </div>
+
+        <div class="content">
+            <div class="toc">
+                <h2>📑 Table des Matières</h2>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#collecte-donnees">Collecte et Utilisation des Données</a></li>
+                    <li><a href="#partage-donnees">Partage des Données</a></li>
+                    <li><a href="#conservation">Durée de Conservation</a></li>
+                    <li><a href="#securite">Sécurité des Données</a></li>
+                    <li><a href="#droits">Vos Droits</a></li>
+                    <li><a href="#permissions">Permissions Android/iOS</a></li>
+                    <li><a href="#modifications">Modifications de cette Politique</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <section id="introduction" class="section">
+                <h2>Introduction</h2>
+                <p>
+                    Novabridge Ltd ("nous", "notre") exploite l'application mobile IziDriver (le "Service"). 
+                    Cette page vous informe de nos politiques concernant la collecte, l'utilisation et la 
+                    divulgation de données personnelles lorsque vous utilisez notre Service.
+                </p>
+            </section>
+
+            <section id="collecte-donnees" class="section">
+                <h2>Collecte et Utilisation des Données</h2>
+
+                <h3>1. Données de Localisation GPS</h3>
+                
+                <h4>Données collectées :</h4>
+                <ul>
+                    <li>Localisation GPS précise (latitude, longitude) en temps réel</li>
+                    <li>Historique de localisation pendant les courses</li>
+                    <li>Localisation en arrière-plan (même avec l'écran verrouillé)</li>
+                </ul>
+
+                <h4>Finalité :</h4>
+                <ul>
+                    <li>Permettre le suivi en temps réel de votre position pour le dispatch de courses</li>
+                    <li>Partager votre localisation avec le passager pendant la course</li>
+                    <li>Calculer les itinéraires et distances</li>
+                    <li>Assurer un service de navigation GPS fiable</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>Collecte en arrière-plan :</strong><br>
+                    Oui, la localisation est collectée en arrière-plan pour :
+                    <ul style="margin-top: 10px;">
+                        <li>Maintenir votre statut "en ligne" et recevoir des courses</li>
+                        <li>Suivre votre position pendant les trajets actifs</li>
+                        <li>Permettre au passager de vous localiser en temps réel</li>
+                    </ul>
+                </div>
+
+                <p><strong>Base légale :</strong> Exécution du contrat de service VTC</p>
+
+                <h3>2. Caméra et Photos</h3>
+                
+                <h4>Données collectées :</h4>
+                <ul>
+                    <li>Photos de votre permis de conduire</li>
+                    <li>Photos de votre carte grise du véhicule</li>
+                    <li>Photos de votre assurance véhicule</li>
+                    <li>Selfie pour vérification d'identité (avec liveness detection)</li>
+                    <li>Photos du véhicule avec plaque d'immatriculation</li>
+                </ul>
+
+                <h4>Finalité :</h4>
+                <ul>
+                    <li>Vérification de votre identité et de vos documents légaux</li>
+                    <li>Conformité réglementaire pour l'activité VTC</li>
+                    <li>Prévention de la fraude</li>
+                    <li>Sécurité des passagers</li>
+                </ul>
+
+                <div class="info-box">
+                    <strong>Stockage :</strong><br>
+                    Les photos sont stockées de manière sécurisée sur nos serveurs avec chiffrement. 
+                    Elles ne sont accessibles qu'à notre équipe de vérification.
+                </div>
+
+                <p><strong>Base légale :</strong> Obligation légale et exécution du contrat</p>
+
+                <h3>3. Numéro de Téléphone</h3>
+                
+                <h4>Données collectées :</h4>
+                <ul>
+                    <li>Numéro de téléphone mobile avec indicatif pays</li>
+                </ul>
+
+                <h4>Finalité :</h4>
+                <ul>
+                    <li>Authentification via code OTP (WhatsApp ou SMS)</li>
+                    <li>Communication concernant vos courses</li>
+                    <li>Support client</li>
+                </ul>
+
+                <p><strong>Base légale :</strong> Exécution du contrat</p>
+
+                <h3>4. Informations de Compte Chauffeur</h3>
+                
+                <h4>Données collectées :</h4>
+                <ul>
+                    <li>Nom complet</li>
+                    <li>Adresse e-mail</li>
+                    <li>Informations du véhicule (marque, modèle, plaque, couleur)</li>
+                    <li>Documents professionnels (permis, assurance, carte grise)</li>
+                    <li>Historique des courses</li>
+                    <li>Revenus et commissions</li>
+                </ul>
+
+                <h4>Finalité :</h4>
+                <ul>
+                    <li>Gestion de votre compte chauffeur</li>
+                    <li>Calcul de vos gains et commissions</li>
+                    <li>Historique de vos courses</li>
+                    <li>Gestion du wallet (recharges et retraits)</li>
+                </ul>
+
+                <p><strong>Base légale :</strong> Exécution du contrat</p>
+
+                <h3>5. Notifications Push</h3>
+                
+                <h4>Données collectées :</h4>
+                <ul>
+                    <li>Token de notification Firebase Cloud Messaging (FCM)</li>
+                    <li>Préférences de notification</li>
+                </ul>
+
+                <h4>Finalité :</h4>
+                <ul>
+                    <li>Vous alerter des nouvelles courses disponibles</li>
+                    <li>Notifications de crédits wallet et bonus</li>
+                    <li>Alertes critiques système (passage hors ligne automatique)</li>
+                </ul>
+
+                <p><strong>Base légale :</strong> Consentement et exécution du contrat</p>
+
+                <h3>6. Données Techniques</h3>
+                
+                <h4>Données collectées :</h4>
+                <ul>
+                    <li>Modèle de l'appareil</li>
+                    <li>Version du système d'exploitation (Android/iOS)</li>
+                    <li>Version de l'application</li>
+                    <li>Logs de connexion et d'erreurs</li>
+                </ul>
+
+                <h4>Finalité :</h4>
+                <ul>
+                    <li>Amélioration de la stabilité de l'application</li>
+                    <li>Support technique</li>
+                    <li>Détection et correction de bugs</li>
+                </ul>
+
+                <p><strong>Base légale :</strong> Intérêt légitime</p>
+            </section>
+
+            <section id="partage-donnees" class="section">
+                <h2>Partage des Données</h2>
+
+                <h3>Avec les Passagers</h3>
+                <ul>
+                    <li>Votre prénom</li>
+                    <li>Photo de profil (si fournie)</li>
+                    <li>Modèle et couleur du véhicule</li>
+                    <li>Plaque d'immatriculation</li>
+                    <li><strong>Localisation GPS en temps réel pendant la course uniquement</strong></li>
+                </ul>
+
+                <h3>Avec des Tiers</h3>
+                <div class="success-box">
+                    <strong>Nous ne vendons jamais vos données personnelles.</strong> Nous partageons uniquement :
+                    <ul style="margin-top: 10px;">
+                        <li><strong>Fournisseurs de services :</strong> Firebase (notifications), Google Maps (navigation), DexPay (paiements)</li>
+                        <li><strong>Autorités légales :</strong> Si requis par la loi ou en cas d'enquête</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="conservation" class="section">
+                <h2>Durée de Conservation</h2>
+                <ul>
+                    <li><strong>Données de localisation pendant course :</strong> 90 jours après la course</li>
+                    <li><strong>Historique de courses :</strong> 5 ans (obligation comptable)</li>
+                    <li><strong>Documents d'identité :</strong> Durée de votre contrat + 3 ans</li>
+                    <li><strong>Données de compte :</strong> Jusqu'à suppression de votre compte + 1 an</li>
+                </ul>
+            </section>
+
+            <section id="securite" class="section">
+                <h2>Sécurité des Données</h2>
+                <p>Nous mettons en œuvre des mesures de sécurité appropriées :</p>
+                <ul>
+                    <li>Chiffrement HTTPS pour toutes les communications</li>
+                    <li>Stockage sécurisé des documents sensibles</li>
+                    <li>Authentification forte (OTP)</li>
+                    <li>Vérification d'identité par liveness detection</li>
+                    <li>Accès restreint aux données personnelles</li>
+                </ul>
+            </section>
+
+            <section id="droits" class="section">
+                <h2>Vos Droits</h2>
+                <p>Conformément au RGPD et aux lois locales sur la protection des données, vous avez le droit de :</p>
+                <ul>
+                    <li><strong>Accéder</strong> à vos données personnelles</li>
+                    <li><strong>Rectifier</strong> vos données inexactes</li>
+                    <li><strong>Supprimer</strong> votre compte et vos données</li>
+                    <li><strong>Limiter</strong> le traitement de vos données</li>
+                    <li><strong>Vous opposer</strong> au traitement (sous certaines conditions)</li>
+                    <li><strong>Portabilité</strong> de vos données</li>
+                </ul>
+                <p>Pour exercer ces droits, contactez-nous à : <strong>privacy@iziauto.com</strong></p>
+            </section>
+
+            <section id="permissions" class="section">
+                <h2>Permissions Android/iOS</h2>
+                <p>L'application demande les permissions suivantes :</p>
+
+                <h3>Localisation (Critique)</h3>
+                <ul>
+                    <li><code>ACCESS_FINE_LOCATION</code> : Localisation GPS précise</li>
+                    <li><code>ACCESS_COARSE_LOCATION</code> : Localisation approximative</li>
+                    <li><code>ACCESS_BACKGROUND_LOCATION</code> : Localisation en arrière-plan</li>
+                </ul>
+
+                <h3>Caméra et Stockage</h3>
+                <ul>
+                    <li><code>CAMERA</code> : Capture de documents et selfie</li>
+                    <li><code>READ_MEDIA_IMAGES</code> : Sélection de photos existantes</li>
+                    <li><code>WRITE_EXTERNAL_STORAGE</code> : Stockage temporaire de photos</li>
+                </ul>
+
+                <h3>Notifications</h3>
+                <ul>
+                    <li><code>POST_NOTIFICATIONS</code> : Affichage de notifications push</li>
+                </ul>
+
+                <h3>Autres</h3>
+                <ul>
+                    <li><code>INTERNET</code> : Connexion au backend</li>
+                    <li><code>WAKE_LOCK</code> : Maintien de l'écran actif pendant navigation</li>
+                    <li><code>SYSTEM_ALERT_WINDOW</code> : Affichage de l'alerte de nouvelle course</li>
+                </ul>
+            </section>
+
+            <section id="modifications" class="section">
+                <h2>Modifications de cette Politique</h2>
+                <p>
+                    Nous pouvons mettre à jour cette politique de temps en temps. Nous vous informerons de tout 
+                    changement en publiant la nouvelle politique sur cette page et en mettant à jour la date de 
+                    "Dernière mise à jour".
+                </p>
+            </section>
+
+            <section id="contact" class="section">
+                <h2>Contact</h2>
+                <p>Pour toute question concernant cette politique de confidentialité :</p>
+                <ul>
+                    <li><strong>Email :</strong> <a href="mailto:privacy@iziauto.com">privacy@iziauto.com</a></li>
+                    <li><strong>Support :</strong> <a href="mailto:support@iziauto.com">support@iziauto.com</a></li>
+                    <li><strong>Adresse :</strong> Novabridge Ltd, Dakar, Sénégal</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="footer">
+            <p><strong>Novabridge Ltd</strong> - IziDriver Application</p>
+            <p>Tous droits réservés © 2026</p>
+            <p style="margin-top: 20px; font-size: 0.9em;">
+                Cette politique de confidentialité est conforme aux exigences du Google Play Store et respecte 
+                les réglementations RGPD sur la protection des données personnelles.
+            </p>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top" title="Retour en haut">↑</a>
+
+    <script>
+        // Smooth scroll pour les liens d'ancrage
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Afficher/masquer le bouton retour en haut
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
